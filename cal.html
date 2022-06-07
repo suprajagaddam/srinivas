@@ -1,0 +1,58 @@
+<html>
+<head><title>cal</title>
+<style>
+#clear{
+width:100px;
+}
+#answer{
+width:100px;
+background-color:white;
+}
+.formstyle{
+height:485px;
+align:center;
+width:332px;
+margin:auto;
+background-color:87bdd8;
+border:2px solid black;
+size="80px"}
+ .input{
+ width:34px;
+ background-color:#87bdd8;
+ color:white;
+}
+#demo{
+height:80px;
+width:80px;
+}
+#demo2{
+height:80px;
+width:330px;
+}
+</style>
+</head>
+<body>
+<div class="formstyle">
+<form name="forms">
+<input type="text" id='demo2'name="answer" id="answer"><br>
+<input type="button" id='demo'name="" value="1" onclick="forms.answer.value+='1'">
+<input type="button" id='demo'name="" value="2" onclick="forms.answer.value+='2'">
+<input type="button" id='demo'name="" value="3" onclick="forms.answer.value+='3'">
+<input type="button" id='demo'name="" value="+" onclick="forms.answer.value+='+'"><br>
+<input type="button" id='demo' name="" value="4" onclick="forms.answer.value+='4'">
+<input type="button" id='demo'name="" value="5" onclick="forms.answer.value+='5'">
+<input type="button"id='demo' name="" value="6" onclick="forms.answer.value+='6'">
+<input type="button" id='demo'name="" value="-" onclick="forms.answer.value+='-'"><br> 
+<input type="button" id='demo'name="" value="7" onclick="forms.answer.value+='7'">
+<input type="button" id='demo'name="" value="8" onclick="forms.answer.value+='8'">
+<input type="button" id='demo'name="" value="9" onclick="forms.answer.value+='9'">
+<input type="button" id='demo'name="" value="*" onclick="forms.answer.value+='*'"><br>
+<input type="button" id='demo'name="" value="0" onclick="forms.answer.value+='0'">
+<input type="button" id='demo'name=""  value="/" onclick="forms.answer.value+='/'">
+<input type="button" id='demo'name=""  value="=" onclick="forms.answer.value=eval(forms.answer.value)">
+<input type="button" id='demo'name="" value="." onclick="forms.answer.value+='.'"><br>
+<input type="text" id='demo2'name="" value="clear" onclick="forms.answer.value =''" id="clear">
+</div>
+</form>
+</body>
+</html>
